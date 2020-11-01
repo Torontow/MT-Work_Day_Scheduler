@@ -4,7 +4,8 @@ body {
     line-height: 1;
   }
   
-  textarea{
+  /* styles the form text areas*/
+  textarea {
     background: transparent;
     border: none;
     resize: none;
@@ -25,38 +26,40 @@ body {
     white-space: pre-wrap;
   }
   
+  /* styles the left column */
   .time-block{
     text-align: center;
     border-radius: 15px;
   }
-  
+  /* styles the rows */
   .row {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
   }
-  
+  /* styles the hour block */
   .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
   }
-  
+  /* dynamic styling based on the current time */
   .past {
     background-color: #d3d3d3;
     color: white;
   }
-  
+  /* dynamic styling based on the current time */
   .present {
     background-color: #ff6961;
     color: white;
   }
-  
+  /* dynamic styling based on the current time */
   .future {
     background-color: #77dd77;
     color: white;
   }
   
+  /* styles everything in the right column */
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
