@@ -4,7 +4,7 @@ body {
     line-height: 1;
   }
   
-  /* styles the form text areas*/
+  /* styles the form text areas */
   textarea {
     background: transparent;
     border: none;
@@ -26,7 +26,7 @@ body {
     white-space: pre-wrap;
   }
   
-  /* styles the left column */
+  /* styles for the left column */
   .time-block{
     text-align: center;
     border-radius: 15px;
@@ -59,7 +59,7 @@ body {
     color: white;
   }
   
-  /* styles everything in the right column */
+  /* styles for the right column */
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
@@ -71,5 +71,11 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+  }
+
+  /* styles the "clear" button */
+  #clear {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
