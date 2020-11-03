@@ -16,7 +16,7 @@ $(document).ready(function () {
 
                 // local variables to build layout
                 hour = $("<div>").addClass("col-1").attr("id", [i]).text(timesArray[i] + ":00");
-                todo = $("<textarea>").addClass("description col").attr("time", (i + 9)).attr("id",[i]);
+                todo = $("<textarea>").addClass("description col").attr("time", (i + 9)).attr("id", [i]);
 
                 save = $("<button>").addClass("saveBtn col-1").attr("id", [i]);
                 // builds the rows onto scheduler
@@ -40,20 +40,23 @@ $(document).ready(function () {
 
 
         // render the schedule function
-
         function renderScheduler() {
-                $
-        }
+                $("textarea").each(function () {
+                        var inputId = $(this).attr("id");
+                        $(this).val(localStorage.getItem(inputId));
+                });
+        };
 
         // store items function
-        $(".saveBtn").on("click", function(event){
+        $(".saveBtn").on("click", function (event) {
                 event.preventDefault();
                 var saveIndex = $(this).attr("id");
                 var scheduleInput = $(this).siblings("textarea").val();
-                localStorage.setItem(saveIndex,scheduleInput);
+                localStorage.setItem(saveIndex, scheduleInput);
 
         })
 
+        renderScheduler();
         // end of document ready function
 });
 
