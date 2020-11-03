@@ -18,7 +18,7 @@ $(document).ready(function () {
                 hour = $("<div>").addClass("col-1").attr("id", [i]).text(timesArray[i] + ":00");
                 todo = $("<textarea>").addClass("description col").attr("time", (i + 9)).attr("id", [i]);
 
-                save = $("<button>").addClass("saveBtn col-1").attr("id", [i]);
+                save = $("<button>").addClass("saveBtn col-1").attr("id", [i]).html("<i class='fas fa-save'></i>");
                 // builds the rows onto scheduler
                 var row = $("<div>").addClass("row hour").attr("id", [i]);
                 row.append(hour).append(todo).append(save);
